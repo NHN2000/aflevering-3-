@@ -1,6 +1,10 @@
 scene.onOverlapTile(SpriteKind.Player, assets.tile`transparency16`, function (sprite, location) {
 	
 })
+sprites.onCreated(SpriteKind.Player, function (sprite) {
+    let mySprite: Sprite = null
+    mySprite.setVelocity(50, 50)
+})
 tiles.setCurrentTilemap(tilemap`level1`)
 scene.setBackgroundImage(img`
     8fffffffffffffffffffffffff88fffff88ffff8998889999999989988888989999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
