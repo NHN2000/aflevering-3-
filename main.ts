@@ -1,3 +1,7 @@
+scene.onOverlapTile(SpriteKind.Player, assets.tile`transparency16`, function (sprite, location) {
+	
+})
+tiles.setCurrentTilemap(tilemap`level1`)
 scene.setBackgroundImage(img`
     8fffffffffffffffffffffffff88fffff88ffff8998889999999989988888989999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
     ffffffffffffffffffffffffff8fffff88ff9f88889889999999989998888898999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
@@ -212,4 +216,4 @@ let aalegraes = sprites.createProjectileFromSprite(img`
     ...................................
     ...................................
     ...................................
-    `, krog, 50, 50)
+    `, krog, 16, 50)
